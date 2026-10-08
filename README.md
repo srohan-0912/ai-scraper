@@ -4,7 +4,9 @@ An AI-powered web application that extracts readable content from a webpage and 
 
 ## 🚀 Live Demo
 
-Coming soon — deployed with Vercel.
+[https://ai-scraper-six.vercel.app](https://ai-scraper-six.vercel.app)
+
+Try the live application by entering a publicly accessible webpage URL.
 
 ## 📌 Project Overview
 
@@ -16,10 +18,11 @@ The application:
 2. Validates the URL.
 3. Fetches the webpage.
 4. Extracts readable text using Cheerio.
-5. Limits the extracted content to avoid unnecessarily large AI requests.
-6. Sends the content to Groq AI.
-7. Generates a concise 5–8 bullet-point summary.
-8. Displays the result through a simple web interface.
+5. Removes unnecessary HTML elements such as scripts and styles.
+6. Limits the extracted content to 30,000 characters.
+7. Sends the processed content to Groq AI.
+8. Generates a concise 5–8 bullet-point summary.
+9. Displays the result through a responsive web interface.
 
 ## ✨ Features
 
@@ -35,7 +38,7 @@ The application:
 - 🛡️ Local and internal URL protection
 - 📏 30,000-character content limit
 - 📱 Responsive interface
-- ☁️ Ready for Vercel deployment
+- ☁️ Deployed on Vercel
 
 ## 🛠️ Tech Stack
 
@@ -80,7 +83,6 @@ Next.js Frontend
 Next.js API Route
   │
   ├── Validate URL
-  │
   ├── Check URL security
   │
   ▼
